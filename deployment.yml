@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tmg-vso-offer-app
+  name: resale-offer-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tmg-vso-offer-app
+      app: resale-offer-app
   template:
     metadata:
       labels:
-        app: tmg-vso-offer-app
+        app: resale-offer-app
     spec:
       containers:
-        - name: tmg-vso-offer-app
+        - name: resale-offer-app
           image: de.icr.io/cic-tmg-ecommerce/user-managment-backend-dev-app:638-k8-deployment-77980661-20210727153437
           args:
             - --spring.application.json=$(BINDING)
@@ -48,13 +48,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: tmg-vso-offer-service-cip
+  name: resale-offer-service-cip
   labels:
-    app: tmg-vso-offer-app
+    app: resale-offer-app
 spec:
   type: ClusterIP
   ports:
     - port: 80
       targetPort: 8025
   selector:
-    app: tmg-vso-offer-app
+    app: resale-offer-app

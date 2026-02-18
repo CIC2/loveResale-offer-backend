@@ -12,10 +12,10 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>homefly-offer</artifactId>
+    <artifactId>loveresale-offer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>homefly-offer</name>
-    <description>homefly-offer</description>
+    <name>resale-offer</name>
+    <description>resale-offer</description>
 
     <properties>
         <java.version>17</java.version>
