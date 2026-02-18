@@ -62,3 +62,4 @@ spec:
       targetPort: 8025
   selector:
     app: resale-offer-app
+    
