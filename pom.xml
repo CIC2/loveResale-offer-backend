@@ -133,6 +133,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>app</finalName>
         <plugins>
             <!-- ✅ Java Compilation -->
             <plugin>
