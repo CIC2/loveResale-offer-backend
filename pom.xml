@@ -12,7 +12,7 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>loveresale-offer</artifactId>
+    <artifactId>resale-offer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>resale-offer</name>
     <description>resale-offer</description>
